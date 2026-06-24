@@ -55,7 +55,7 @@ namespace Test23demo.Views.Windows
                     if (App.currentUsers != null)
                     {
                         failedEntryCount++;
-                        MessageBox.Show($"Вы ввели неверный пароль осталось попыток {failedEntryCount} из 3 ", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                        MessageBox.Show($"Вы ввели неверный пароль осталось попыток {3 - failedEntryCount} из 3 ", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                         if (failedEntryCount == 3)
                         {
                             MessageBox.Show("Вы заблокированы. Обратитесь к администратору", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
